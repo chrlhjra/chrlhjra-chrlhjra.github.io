@@ -6,25 +6,21 @@ padding: 0;
 body, html{
   height: 100%;
 }
-
-body{
+.playsafe{
 background-image: url(newes.jpg);
-
-height: 100%
-
-background-position: center;
+min-height: 100%;
 background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
 background-size: cover;
 }
-.banner-text h1{
-font-size: 80px;
-font-family:fantasy;
-font-weight:900;
-float: center;
-text-align: center;
-margin-top: 15%
+.font-effect-fire{
+  text-align: center;
+  margin-top: 10%;
+  font-size: 90px;
 }
-
+.new{
+  text-align: center;
 }
 .banner-text h6{
   font-size: 20px;
@@ -34,27 +30,38 @@ margin-top: 15%
   text-align: center;
   margin-top: 20%
 }
-
-body{
-  background-position: center;
-  font-family: sans-serif;
-}
 .banner-text{
   width: 100%;
   position: absolute;
 }
-banner-text ul{
-  height: 50px;
-  float: right;
+.banner-text ul{
+  height: 70px;
+  float: center;
+}
+.center ul li{
+  display:  inline-block;
+  padding: 30px 15px;
+  font-family: fantasy;
+  text- transform: uppercase;
+  background-color: lightblue;
+  background-blend-mode:lighten;
+  color: #000;
+  font-size: 20px;
+  margin-top:10;
 }
 .banner-text ul li{
   display:  inline-block;
   padding: 30px 15px;
   font-family: fantasy;
   text- transform: uppercase;
-  background-color: ;
-  background-size:
   color: #000;
+  font-size: 20px;
+
+}
+.banner ul li{
+  display:  inline-block;
+  padding: 30px 15px;
+  font-family: fantasy;
   font-size: 20px;
 }
 .banner-text h2{
@@ -159,4 +166,70 @@ banner-text ul{
   margin-top: 2%;
 font-family: cursive;
 font-size: 19px;
+}
+.neonText{
+  animation: flicker 1.5s infinite alternate;
+  color: #FFD700;
+}
+
+h1 {
+  font-size: 5.2rem;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+
+  }
+
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
+}
+
+h1 {
+ font-size: 5.2rem;
+}
+.container {
+  margin-top: 25vh;
+}
+
+body {
+
+  background-color: #939597;
+}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 2000;
+}
+td{
+  background-color: lightblue;
+}
+th{
+  background-color: blue;
+}
+.dataframe{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.we h2{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+font-family: monospace;
+  background: pink;
 }
